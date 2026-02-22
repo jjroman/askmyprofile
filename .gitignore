@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Azure Functions
+api/bin/
+api/obj/
+api/.python_packages/
+api/__blobstorage__/
+api/__queuestorage__/
+api/__azurite_db*__.json
+.python_version
+
+# Environment variables
+.env
+.env.local
+local.settings.json
+
+# Build outputs
+dist/
+build/
+.output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Azure
+.azure/
+
+# Personal profile / config overrides
+# These files contain your personal data — never commit them to a public repo.
+# Copy api/profile.example.md → api/profile.md and
+#      public/config.example.json → public/config.json to get started.
+api/profile.md
+
+# Personal data files — keep out of public repos
+*_profile_prompt.md
+profile_oneline.txt

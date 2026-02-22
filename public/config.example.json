@@ -1,0 +1,40 @@
+{
+  "owner": {
+    "name": "[YOUR FULL NAME]",
+    "shortName": "[YOUR FIRST NAME OR SHORT NAME]",
+    "username": "[YOUR USERNAME — shown in the terminal prompt]",
+    "title": "[YOUR TITLE · Area of Expertise]",
+    "experience": "[X]+ yrs [Primary Stack] · [Y]+ yrs [Domain]",
+    "location": "[CITY, COUNTRY]",
+    "linkedin": "https://linkedin.com/in/[YOUR_HANDLE]",
+    "github": "https://github.com/[YOUR_HANDLE]"
+  },
+  "ui": {
+    "appVersion": "1.0.0",
+    "motd": "// interactive profile loaded. ask me anything about {shortName}'s experience, skills, or projects.",
+    "audienceLabel": "recruiter",
+    "stackLabel": "[YOUR HOSTING PLATFORM] · [YOUR AI PROVIDER] API"
+  },
+  "asciiArt": [
+    "  Replace with your own ASCII art, or leave as an empty array [] to skip.",
+    "  Generate art at: https://patorjk.com/software/taag/"
+  ],
+  "questions": [
+    {
+      "label": "recent-projects",
+      "question": "Tell me about {shortName}'s most impactful recent projects"
+    },
+    {
+      "label": "leadership-style",
+      "question": "How does {shortName} approach team leadership and mentoring?"
+    },
+    {
+      "label": "technical-background",
+      "question": "What is {shortName}'s core technical background and expertise?"
+    },
+    {
+      "label": "personal-interests",
+      "question": "What are {shortName}'s hobbies and personal interests?"
+    }
+  ]
+}

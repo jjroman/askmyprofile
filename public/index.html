@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile:~$</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ── Access gate ─────────────────────────────────────── -->
+    <div class="gate-overlay" id="gateOverlay">
+        <div class="gate-box">
+            <pre class="gate-ascii" id="gate-ascii"></pre>
+            <p class="gate-label">// access restricted — enter your invite code</p>
+            <div class="gate-input-row">
+                <span class="gate-prompt">code@resume:~$</span>
+                <input
+                    id="codeInput"
+                    type="text"
+                    maxlength="7"
+                    autocomplete="off"
+                    spellcheck="false"
+                    placeholder="XXX-XXX"
+                />
+                <button id="codeSubmit">&#9166;</button>
+            </div>
+            <p class="gate-error" id="gateError"></p>
+            <p class="gate-hint">// code provided with the resume · case insensitive</p>
+        </div>
+    </div>
+
+    <div class="terminal-window">
+
+        <!-- Title bar -->
+        <div class="title-bar">
+            <div class="title-bar-dots">
+                <span></span><span></span><span></span>
+            </div>
+            <span class="title-bar-text" id="title-bar-text"></span>
+        </div>
+
+        <!-- Header / MOTD -->
+        <header class="term-header" id="termHeader">
+            <!-- Toggle row -->
+            <div class="header-toggle" id="headerToggle" title="collapse / expand profile">
+                <span class="toggle-btn" id="toggleBtn">[−]</span>
+                <span class="header-summary" id="header-summary"></span>
+            </div>
+            <!-- Collapsible content -->
+            <div class="header-content" id="headerContent">
+                <pre class="ascii-banner" id="ascii-banner"></pre>
+                <div class="sys-info">
+                    <div class="info-line"><span class="label">name</span><span class="sep">:</span><span class="value" id="sysinfo-name"></span></div>
+                    <div class="info-line"><span class="label">role</span><span class="sep">:</span><span class="value" id="sysinfo-role"></span></div>
+                    <div class="info-line"><span class="label">exp </span><span class="sep">:</span><span class="value" id="sysinfo-exp"></span></div>
+                    <div class="info-line"><span class="label">loc </span><span class="sep">:</span><span class="value" id="sysinfo-loc"></span></div>
+                </div>
+                <div class="divider"></div>
+                <p class="motd" id="motd"></p>
+            </div>
+        </header>
+
+        <!-- Quick commands -->
+        <section class="quick-commands" id="suggestions">
+            <div class="section-label">// suggested queries</div>
+            <div class="cmd-list" id="cmd-list"></div>
+        </section>
+
+        <!-- Session output -->
+        <main class="term-body" id="chatMessages">
+            <div class="output-block assistant-output">
+                <div class="output-line"><span class="prompt-sys">system</span><span class="sep"> &gt; </span>session started. profile loaded. type your question below or use a suggested query.</div>
+            </div>
+        </main>
+
+        <!-- Input row -->
+        <div class="term-input-row">
+            <span class="input-prompt" id="input-prompt"></span>
+            <textarea id="userInput" rows="1" autocomplete="off" spellcheck="false" placeholder="type your question and press Enter…"></textarea>
+            <button id="sendButton" title="Send">&#9166;</button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="term-footer">
+            <div class="footer-cols">
+                <div>
+                    <span class="label">stack</span><span class="sep"> : </span><span id="footer-stack"></span>
+                </div>
+                <div>
+                    <span class="label">links</span><span class="sep"> : </span>
+                    <a id="footer-linkedin" href="#" target="_blank">linkedin</a>
+                    &nbsp;·&nbsp;
+                    <a id="footer-github" href="#" target="_blank">github</a>
+                </div>
+                <div>
+                    <span class="label">built</span><span class="sep"> : </span><span id="footer-author"></span>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

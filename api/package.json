@@ -1,0 +1,19 @@
+{
+  "name": "interactive-profile-api",
+  "version": "1.0.0",
+  "description": "Serverless API for the interactive-profile-web template",
+  "main": "src/functions/*.js",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@azure/functions": "^4.11.2",
+    "openai": "^4.85.0",
+    "@google/generative-ai": "^0.21.0"
+  },
+  "devDependencies": {
+    "azure-functions-core-tools": "^4.0.0"
+  }
+}

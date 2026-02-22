@@ -1,0 +1,43 @@
+{
+  "owner": {
+    "name": "Neu Rona",
+    "shortName": "Neu",
+    "username": "neurona",
+    "title": "Senior Software Engineer · Full-Stack & Cloud",
+    "experience": "8+ yrs TypeScript/Node · 5+ yrs cloud architecture",
+    "location": "Seattle, WA",
+    "linkedin": "https://linkedin.com/in/neurona-test",
+    "github": "https://github.com/neurona-test"
+  },
+  "ui": {
+    "appVersion": "1.0.0",
+    "motd": "// interactive profile loaded. ask me anything about {shortName}'s experience, skills, or projects.",
+    "audienceLabel": "recruiter",
+    "stackLabel": "Static Web · Serverless Functions · Claude API"
+  },
+  "asciiArt": [
+    " _   _  ___  ____      _      ____  _____ _____ ____  ",
+    "| \\ | |/ _ \\|  _ \\    / \\    |  _ \\| ____|  ___|  _ \\ ",
+    "|  \\| | | | | |_) |  / _ \\   | |_) |  _| | |_  | | | |",
+    "| |\\  | |_| |  _ <  / ___ \\  |  _ <| |___|  _| | |_| |",
+    "|_| \\_|\\___/|_| \\_\\/_/   \\_\\ |_| \\_\\_____|___|  |____/ "
+  ],
+  "questions": [
+    {
+      "label": "recent-projects",
+      "question": "Tell me about {shortName}'s most impactful recent projects"
+    },
+    {
+      "label": "leadership-style",
+      "question": "How does {shortName} approach team collaboration and mentoring?"
+    },
+    {
+      "label": "cloud-experience",
+      "question": "What is {shortName}'s experience with cloud architecture?"
+    },
+    {
+      "label": "personal-interests",
+      "question": "What are {shortName}'s hobbies and personal interests?"
+    }
+  ]
+}

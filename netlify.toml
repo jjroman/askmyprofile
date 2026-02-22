@@ -1,0 +1,27 @@
+[build]
+  publish = "public"
+  functions = "platforms/netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Redirect /api/* to Netlify Functions
+[[redirects]]
+  from = "/api/chat"
+  to = "/.netlify/functions/chat"
+  status = 200
+
+[[redirects]]
+  from = "/api/validateCode"
+  to = "/.netlify/functions/validateCode"
+  status = 200
+
+# SPA fallback — all other routes serve index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["api/profile.md", "api/src/**"]
