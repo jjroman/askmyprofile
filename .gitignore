@@ -43,7 +43,7 @@ logs/
 # These files contain your personal data — never commit them to a public repo.
 # Copy api/profile.example.md → api/profile.md and
 #      public/config.example.json → public/config.json to get started.
-api/profile.md
+# api/profile.md
 
 # Personal data files — keep out of public repos
 *_profile_prompt.md
